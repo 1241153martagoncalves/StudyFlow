@@ -1,0 +1,275 @@
+/* FUNDO PRINCIPAL */
+
+.root {
+    -fx-background-image: url("studyflow-background.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: #35304A;
+}
+
+
+/*
+   TEXTOS
+*/
+
+.label {
+    -fx-text-fill: #35304A;
+}
+
+
+/*
+   BOTÕES
+*/
+
+.button {
+    -fx-background-color: rgba(255, 255, 255, 0.84);
+
+    -fx-background-radius: 13;
+
+    -fx-border-color: rgba(143, 122, 187, 0.38);
+    -fx-border-width: 1;
+    -fx-border-radius: 13;
+
+    -fx-padding: 11 19 11 19;
+
+    -fx-text-fill: #4D4265;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+/* Rato por cima */
+
+.button:hover {
+    -fx-background-color: rgba(238, 229, 251, 0.96);
+    -fx-border-color: #AA90D3;
+}
+
+/* Ao clicar */
+
+.button:pressed {
+    -fx-background-color: #DED0F0;
+}
+
+/* Botão selecionado */
+
+.button:focused {
+    -fx-border-color: #9A7DC6;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(146, 115, 186, 0.18),
+        9,
+        0.2,
+        0,
+        1
+    );
+}
+
+
+/*
+   CAIXAS DE TEXTO
+*/
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+
+    -fx-background-radius: 11;
+
+    -fx-border-color: rgba(151, 135, 183, 0.45);
+    -fx-border-width: 1;
+    -fx-border-radius: 11;
+
+    -fx-padding: 11 13 11 13;
+
+    -fx-text-fill: #35304A;
+
+    -fx-prompt-text-fill: #8B839A;
+
+    -fx-highlight-fill: #D9C8EE;
+    -fx-highlight-text-fill: #35304A;
+}
+
+/* Caixa de texto selecionada */
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+
+    -fx-border-color: #9A7DC6;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(154, 125, 198, 0.20),
+        8,
+        0.15,
+        0,
+        0
+    );
+}
+
+/* Caixa desativada */
+
+.text-field:disabled {
+    -fx-opacity: 0.65;
+}
+
+
+/*
+   COMBO BOX
+   YEAR / SEMESTER / ASSESSMENT TYPE
+*/
+
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+
+    -fx-background-radius: 11;
+
+    -fx-border-color: rgba(151, 135, 183, 0.45);
+    -fx-border-radius: 11;
+    -fx-border-width: 1;
+
+    -fx-padding: 3 5 3 5;
+
+    -fx-cursor: hand;
+}
+
+.combo-box:hover,
+.combo-box:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-border-color: #9A7DC6;
+}
+
+/* Opções */
+
+.combo-box .list-cell {
+    -fx-text-fill: #4D4265;
+    -fx-background-color: transparent;
+    -fx-padding: 7 9 7 9;
+}
+
+/* Menu aberto */
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #DDCFEF;
+
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+}
+
+/* Opção selecionada */
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #EFE6FA;
+    -fx-text-fill: #4D4265;
+}
+
+
+/*
+   LISTAS DE UNIDADES CURRICULARES
+   E AVALIAÇÕES
+*/
+
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.78);
+
+    -fx-background-radius: 13;
+
+    -fx-border-color: rgba(151, 135, 183, 0.40);
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+
+    -fx-padding: 5;
+}
+
+/* Fundo transparente */
+
+.list-view .virtual-flow,
+.list-view .virtual-flow .clipped-container,
+.list-view .virtual-flow .sheet {
+    -fx-background-color: transparent;
+}
+
+/* Linhas das listas */
+
+.list-cell {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #35304A;
+
+    -fx-padding: 11 12 11 12;
+}
+
+/* Rato por cima */
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(237, 226, 250, 0.72);
+    -fx-background-radius: 9;
+}
+
+/* Linha selecionada */
+
+.list-cell:filled:selected {
+    -fx-background-color: #E1D3F4;
+    -fx-background-radius: 9;
+
+    -fx-text-fill: #45385B;
+}
+
+
+/*
+   BARRA DE PROGRESSO
+*/
+
+.progress-bar > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+    -fx-background-radius: 9;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #B19AD8;
+    -fx-background-radius: 9;
+    -fx-background-insets: 0;
+}
+
+
+/*
+   CHECKBOX
+*/
+
+.check-box {
+    -fx-text-fill: #35304A;
+}
+
+.check-box .box {
+    -fx-background-color: rgba(255, 255, 255, 0.90);
+
+    -fx-background-radius: 5;
+
+    -fx-border-color: #B5A1D0;
+    -fx-border-radius: 5;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #8165B0;
+}
+
+
+/*
+   JANELAS DE CONFIRMAÇÃO
+*/
+
+.dialog-pane {
+    -fx-background-color: #FCF9FF;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #F3EDFA;
+}
